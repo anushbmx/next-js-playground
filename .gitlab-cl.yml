@@ -1,0 +1,20 @@
+image: nodejs
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - npm install
+    - npm run lint
+
+build:
+  stage: build
+  script:
+    - npm instll
+    - next build && next export
+  artifacts:
+    paths:
+      - out

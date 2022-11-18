@@ -28,3 +28,15 @@ a {
 /*    background: black;*/
 /*  }*/
 /*}*/
+
+.target-border {
+  @apply border-[#e13881];
+}
+
+.contacted-border {
+  @apply border-[#3788b1];
+}
+
+.first-meeting-border {
+  @apply border-[#aba3c0];
+}

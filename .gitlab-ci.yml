@@ -1,4 +1,4 @@
-image: node/nodejs
+image: node:latest
 
 stages:
   - test

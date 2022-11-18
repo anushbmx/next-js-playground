@@ -1,4 +1,4 @@
-export const Cards = [
+export const Status = [
   {key: 'target', name: 'Target', color: 'border-[#e13881]'},
   {key: 'contacted', name: 'Contacted', color: 'border-[#3788b1]'},
   {key: 'firstMeeting', name: 'First Meeting', color: 'border-[#aba3c0]'},
@@ -30,11 +30,12 @@ export const Tasks = [
   {
     id: 2,
     status: 'contacted',
-    title: 'George M',
+    title: 'George',
     url: 'george.xyz',
     contacts: [
       {
-        name: 'Hannah',
+        name: 'Bono',
+        image: 'contact-3.png'
       },
     ],
     last_activity: 'None',
@@ -46,13 +47,15 @@ export const Tasks = [
     id: 3,
     status: 'target',
     title: 'Norris',
-    url: 'kevin.xyz',
+    url: 'norriscapitals.xyz',
     contacts: [
       {
-        name: 'Smith',
+        name: 'Peter',
+        image: 'contact-3.png'
       },
       {
-        name: 'Jack',
+        name: 'William',
+        image: 'contact-1.png'
       }
     ],
     last_activity: 'None',
@@ -63,8 +66,8 @@ export const Tasks = [
   {
     id: 4,
     status: 'firstMeeting',
-    title: 'Norris',
-    url: 'kevin.xyz',
+    title: 'Ross',
+    url: 'rosspartnership.xyz',
     last_activity: 'None',
     upcoming: 'None',
     reminder: 'Tomorrow',

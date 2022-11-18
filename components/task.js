@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Contact from './contact';
 
 
-function Task({taskData}) {
+function Task({taskData, statusData, taskStatusAction}) {
   return (
     <div className={'bg-[#fcfaf8] p-3 rounded-md drop-shadow-md'}>
       <div className={'flex flex-row pb-2 border-b pb-3'}>
@@ -40,9 +40,7 @@ function Task({taskData}) {
                       ))}
                     </>
                   )
-                  : (
-                    <>None</>
-                  )
+                  : (<>None</>)
                 }
               </div>
             </div>
@@ -69,6 +67,22 @@ function Task({taskData}) {
             </div>
             <div className={'col-span-2'}>
               {taskData.reminder}
+            </div>
+          </div>
+          <div className={'grid grid-cols-3'}>
+            <div className={'text-gray-400'}>
+              Status
+            </div>
+            <div className={'col-span-2'}>
+              <select
+                defaultValue={taskData.key}
+                className={'px-2 py-1 border rounded-md'}
+                onChange={(data)=> taskStatusAction(taskData, data.target.value)}
+              >
+                {statusData.map((data, i) => (
+                  <option key={i} value={data.key} selected={data.key===taskData.status}>{data.name}</option>
+                ))}
+              </select>
             </div>
           </div>
         </div>

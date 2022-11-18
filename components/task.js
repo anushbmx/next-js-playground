@@ -75,12 +75,12 @@ function Task({taskData, statusData, taskStatusAction}) {
             </div>
             <div className={'col-span-2'}>
               <select
-                defaultValue={taskData.key}
+                value={taskData.status}
                 className={'px-2 py-1 border rounded-md'}
                 onChange={(data)=> taskStatusAction(taskData, data.target.value)}
               >
                 {statusData.map((data, i) => (
-                  <option key={i} value={data.key} selected={data.key===taskData.status}>{data.name}</option>
+                  <option key={i} value={data.key}>{data.name}</option>
                 ))}
               </select>
             </div>

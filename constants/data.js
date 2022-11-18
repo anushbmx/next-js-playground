@@ -1,7 +1,7 @@
 export const Status = [
-  {key: 'target', name: 'Target', color: 'border-[#e13881]'},
-  {key: 'contacted', name: 'Contacted', color: 'border-[#3788b1]'},
-  {key: 'firstMeeting', name: 'First Meeting', color: 'border-[#aba3c0]'},
+  {key: 'target', name: 'Target', border: 'border-[#e13881]'},
+  {key: 'contacted', name: 'Contacted', border: 'border-[#3788b1]'},
+  {key: 'firstMeeting', name: 'First Meeting', border: 'border-[#aba3c0]'},
 ];
 
 const notes = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';

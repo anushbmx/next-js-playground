@@ -32,7 +32,7 @@ export default function Home() {
       <div className={'flex bg-[#f9f5f3] flex-nowrap w-screen'}>
         {Status.map((statusData, i) => (
           <div className={'w-80 p-3 mb-5'} key={i}>
-            <div className={`bg-[#fcfaf8] drop-shadow-md p-3 text-center border-b-4 ${statusData.color} mb-5`}>
+            <div className={`bg-[#fcfaf8] drop-shadow-md p-3 text-center border-b-4 ${statusData.border} mb-5`}>
               <h2 className={'font-bold text-black'}>{statusData.name}</h2>
             </div>
 

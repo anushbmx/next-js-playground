@@ -11,7 +11,7 @@ function Contact({contactData}) {
           width={20}
           height={20}
           alt={contactData.name}
-          src={`/images/contact/${contactData.image}`}
+          src={`images/contact/${contactData.image}`}
         />
       </div>
       }

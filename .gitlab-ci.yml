@@ -10,11 +10,16 @@ test:
     - npm install
     - npm run lint
 
-build:
+pages:
   stage: build
   script:
-    - npm instll
-    - next build && next export
+    - npm install
+    - npm run export
+    - rm -rf public
+    - mkdir public
+    - mv out/* public; true
   artifacts:
     paths:
-      - out
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
